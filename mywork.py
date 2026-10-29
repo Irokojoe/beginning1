@@ -56,3 +56,4 @@ welcome Back {log_in}''')
             print(account)
         else:
             print('invalid input')
+create_account()
