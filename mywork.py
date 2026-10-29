@@ -1,28 +1,8 @@
-#password generator after 5 seconds
-import time
-import random
-import string
-
-def passwords():
-    while True:
-        password =''.join(random.choices((string.ascii_letters + string.digits), k=10))
-        print(f'''your password is:
-{password}  ''')
-        print('password changing in: ')
-        for x in range(5, 0, -1):
-            print(x, end='')
-            time.sleep(1)
-        print(' \n')
 #creating unique username and password
 def create_account():
     creating =True
     while creating:
-        account={'joseph': 'Get221j',
-                 'hepzibah': 'yyhs6eg',
-                 'ebenizer': 'just me',
-                 'tofunmi': 'i like woman',
-                 'ayomide': 'i am single',
-                 'josias': 'tiktok boy'}
+        account={''}
         user=input('Sign in / create new account: ').lower()
         if user =='sign in':
             log_in=input('enter your username: ').lower()
@@ -76,7 +56,3 @@ welcome Back {log_in}''')
             print(account)
         else:
             print('invalid input')
-
-name='iroko'
-print(name)
-passwords()
